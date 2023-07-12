@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+
+.footer{
+    /*hacemos que el footer siempre este en la parte baja de la página
+    position: fixed;
+    bottom: 0;
+    /*   */
+    background-color: rgb(23, 22, 22);
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_footer{
+    color: white;
+    width: 50%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contendor para la img de presentacion del apartado Quienes somos?*/
+.section_img_QS{
+    /*background-color: red;*/
+    width: 100%;
+    /*height: calc(100vh - 200px) !important;*/
+    height: 80vh;
+}
+
+.section_img_QS img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.info_QS{
+    display: flex;
+    justify-content: center;
+}
+
+div h5{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*Seccion de principios y valores*/
+.main_valores{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+}
+
+.main_principios{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+}
+
+.section_valores_y_principios{
+    width: 25%;
+    height: 25vh;
+    /*height: 100px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

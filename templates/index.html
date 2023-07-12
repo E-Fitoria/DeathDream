@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='img/icons8-d-67.png') }}" rel="icon"/>
+
+    <title>Nica Drinks | Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='css/styles2.css') }}" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container px-4 px-lg-5">
+          
+          <div class="icono">
+              <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/icon.png') }}" alt="icono"></a>
+          </div>
+          
+          <nav>
+              <ul class="nav-links">
+
+                  <li><a class="animated-line" aria-current="page" href="{{ url_for('productos') }}">Productos Destacados</a></li>
+
+                  <li class="nav-item dropdown">
+                    <a class="animated-line dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ron</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{url_for('ronflor')}}">Ron Flor de Caña</a></li>
+                        <li><a class="dropdown-item" href="{{url_for('ronplata')}}">Ron Plata</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="animated-line" aria-current="page" href="{{url_for('aguaardiente')}}">Agua Ardiente</a></li>
+                <li><a class="animated-line" aria-current="page" href="{{url_for('cervezas')}}">Cervezas</a></li>
+                <li><a class="animated-line" aria-current="page" href="{{ url_for('quienessomos') }}">Quienes somos?</a></li>
+
+              </ul>
+          </nav>
+
+          <a href="#" class="btn"><button>Descargar App</button></a>
+        
+        </div>
+      </nav>
+         
+
+    <main class="main1">
+      <section class="section1">
+          <div>
+            <h1>NICA DRINKS</h1>
+            <p>El arte en cada gota, la escencia de Nicaragua en cada botella</p>
+            <br/>
+            <h2>Adquiere los licores y cervezas de la mejor</h2>
+            <h2>calidad elaborados en territorio nicaragüense</h2>
+            <h2>desde nuestra aplicación móvil.</h2>
+          </div>
+      </section>
+      <aside class="aside1">
+          <div class="img_login">
+            <img src="{{ url_for('static', filename='img/inicio.jpeg') }}" alt="img celular">
+          </div>
+      </aside>
+    </main>
+    <!--
+    <h2 class="h2_productos_destacados">Productos destacados</h2>
+    <main class="main_productos_destacados">
+      <section class="section_productos_destacados">
+        <div class="producto">
+          <div class="contenedor_img">
+            <img src="/images/productos/Gran reserva 7.png" alt="ll">
+          </div>
+          <div class="descripcion_product">
+            <h4>Gran Reserva 7 años 1000ml</h4>
+          </div>
+        </div>
+      </section>
+      <section class="section_productos_destacados">
+        <div class="producto">
+          <div class="contenedor_img">
+            <img src="/images/productos/ultra lite 1000ml.png" alt="ll">
+          </div>
+          <div class="descripcion_product">
+            <h4>Ultra Lite 1000ml</h4>
+          </div>
+        </div>
+      </section>
+      <section class="section_productos_destacados">
+        <div class="producto">
+          <div class="contenedor_img">
+            <img src="/images/productos/joyita 950ml.png" alt="ll">
+          </div>
+          <div class="descripcion_product">
+            <h4>Joyita de 950ml</h4>
+          </div>
+        </div>
+      </section>
+      <section class="section_productos_destacados">
+        <div class="producto">
+          <div class="contenedor_img">
+            <img src="/images/productos/Ron plata suave.png" alt="ll">
+          </div>
+          <div class="descripcion_product">
+            <h4>Ron Plata Suave 1000ml</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="section_footer">
+        <div>
+          <div><h4>DEATH DREAM</h4></div>
+          <div>
+            <p>Del juzgado municipal dos cuadras al este, una al norte, Teustepe-Boaco</p>
+          </div>  
+        </div>
+      </section>
+      <section class="section_footer">
+        <div>
+          <div>
+            <p>
+              Contáctenos <br/>
+              Teléfono: 0000-0000<br/>
+              Descarga nuestra app en el botón "Descargar App"
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer> -->
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

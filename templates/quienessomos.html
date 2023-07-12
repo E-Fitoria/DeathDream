@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='img/icons8-d-67.png') }}" rel="icon"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='css/styles2.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+    <title>Quiénes somos? | Nica Drinks</title>
+</head>
+<body>
+  
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container px-4 px-lg-5">
+          
+          <div class="icono">
+              <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/icon.png') }}" alt="icono"></a>
+          </div>
+          
+          <nav>
+              <ul class="nav-links">
+
+                  <li><a class="animated-line" aria-current="page" href="{{ url_for('productos') }}">Productos Destacados</a></li>
+
+                  <li class="nav-item dropdown">
+                    <a class="animated-line dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ron</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Ron Flore de Caña</a></li>
+                        <li><a class="dropdown-item" href="#!">Ron Plata</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="animated-line" aria-current="page" href="#">Agua Ardiente</a></li>
+                <li><a class="animated-line" aria-current="page" href="#">Cervezas</a></li>
+                <li><a class="animated-line" aria-current="page" href="{{ url_for('quienessomos') }}">Quienes somos?</a></li>
+
+              </ul>
+          </nav>
+
+          <a href="#" class="btn"><button>Descargar App</button></a>
+        
+        </div>
+      </nav>
+      
+      <div class="section_img_QS">
+        <img src="{{ url_for('static', filename='img/volcan.webp') }}">
+      </div>
+
+      <div class="info_QS">
+        <div>
+            <h5>¿Quiénes somos?</h5>
+            <p>En nuestra empresa, nos enorgullece ofrecer una amplia variedad de licores de alta calidad, todos originarios de Nicaragua. <br/>
+                Nuestra visión es compartir la riqueza y diversidad de los sabores nicaragüenses con el mundo, a través de nuestros productos <br/>
+                cuidadosamente seleccionados y elaborados con los más altos estándares. <br/> <br/>
+                
+                Creemos en la importancia de apoyar a los productores locales y en promover una cultura de consumo responsable. <br/>
+                ¡Ven y descubre la magia de Nicaragua a través de nuestros licores!<br/><br/>
+                
+                Esta empresa se fundó oficialmente en Junio de 2023, sus inicios fueron muy humildes con la distribución de cusuza por estudiantes foráneos<br/>
+                a los locales capitalinos aprovechando un gusto en común de todos los estudiantes de ingeniería.
+            </p>
+            <h5>Principios y valores</h5>
+            <div>
+              <main class="main_valores">
+                <section class="section_valores_y_principios">
+                  <div>
+                    <img src="{{ url_for('static', filename='img/icon-honestidad.png') }} " alt="">
+                    <h6>Honestidad</h6>
+                  </div>         
+                </section>
+                <section class="section_valores_y_principios">
+                  <div>
+                    <img src="{{ url_for('static', filename='img/icon-servicio.png') }}" alt="">
+                    <h6>Servicio</h6>
+                  </div>         
+                </section>
+                <section class="section_valores_y_principios">
+                  <div>
+                    <img src="{{ url_for('static', filename='img/icon-transparencia.png') }}" alt="">
+                    <h6>Transparencia</h6>
+                  </div>         
+                </section>
+              </main>
+
+              <main class="main_principios">
+                <section class="section_valores_y_principios">
+                  <div>
+                    <img src="{{ url_for('static', filename='img/icon-compromiso.png') }}" alt="">
+                    <h6>Compromiso</h6>
+                  </div>         
+                </section>
+                <section class="section_valores_y_principios">
+                  <div>
+                    <img src="{{ url_for('static', filename='img/icon-equipo.png') }}" alt="">
+                    <h6>Trabajo en equipo</h6>
+                  </div>         
+                </section>
+                <section class="section_valores_y_principios">
+                  <div>
+                    <img src="{{ url_for('static', filename='img/icon-profesionalismo.png') }}" alt="">
+                    <h6>Profesionalismo</h6>
+                  </div>         
+                </section>
+              </main>
+            </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <section class="section_footer">
+          <div>
+            <div><h4>DEATH DREAM</h4></div>
+            <div>
+              <p>Del juzgado municipal dos cuadras al este, una al norte, Teustepe-Boaco</p>
+            </div>  
+          </div>
+        </section>
+        <section class="section_footer">
+          <div>
+            <div>
+              <p>
+                Contáctenos <br/>
+                Teléfono: 0000-0000<br/>
+                Descarga nuestra app en el botón "Descargar App"
+              </p>
+            </div>
+          </div>
+        </section>
+      </footer>
+
+</body>
+</html>
