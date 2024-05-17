@@ -8,14 +8,14 @@ from firebase_admin import storage
 app = Flask(__name__, static_folder='static', static_url_path='/static')
 
 # Inicializar la aplicación de Firebase
-cred = credentials.Certificate('nicadrinks-a6375-firebase-adminsdk-azgt0-0ceff29b66.json')
-firebase_admin.initialize_app(cred, {'storageBucket': 'nicadrinks-a6375.appspot.com'})
+cred = credentials.Certificate('tuarchivo.json')
+firebase_admin.initialize_app(cred, {'storageBucket': 'nombre.com'})
 
 # Establecer la configuración de la conexión a SQL Server
 conn = pyodbc.connect(
     'Driver={SQL Server};'
-    'Server=DESKTOP-TMBOKVK\\SQLEXPRESS;'
-    'Database=DBNICADRINKS;'
+    'Server='
+    'Database='
     'UID=;'
     'PWD=;'
 )
@@ -35,12 +35,6 @@ def ronflor():
     cursor.execute('SELECT nombre, precio, descripcion, imagen_url FROM productos')
     productos = cursor.fetchall()
     cursor.close()
-
-    # Generar las URLs de las imágenes desde Firebase Storage
-    bucket = storage.bucket()
-    
-    for producto in productos:
-        imagen_url = producto.imagen_url
       
     # Renderizar la plantilla con los productos y sus imágenes
     return render_template('ronflor.html', productos=productos)
@@ -52,12 +46,6 @@ def ronplata():
     cursor.execute('SELECT nombre, precio, descripcion, imagen_url FROM productos')
     productos = cursor.fetchall()
     cursor.close()
-
-    # Generar las URLs de las imágenes desde Firebase Storage
-    bucket = storage.bucket()
-    
-    for producto in productos:
-        imagen_url = producto.imagen_url
       
     # Renderizar la plantilla con los productos y sus imágenes
     return render_template('ronplata.html', productos=productos)
@@ -69,12 +57,6 @@ def aguaardiente():
     cursor.execute('SELECT nombre, precio, descripcion, imagen_url FROM productos')
     productos = cursor.fetchall()
     cursor.close()
-
-    # Generar las URLs de las imágenes desde Firebase Storage
-    bucket = storage.bucket()
-    
-    for producto in productos:
-        imagen_url = producto.imagen_url
       
     # Renderizar la plantilla con los productos y sus imágenes
     return render_template('aguaardiente.html', productos=productos)
@@ -86,12 +68,6 @@ def cervezas():
     cursor.execute('SELECT nombre, precio, descripcion, imagen_url FROM productos')
     productos = cursor.fetchall()
     cursor.close()
-
-    # Generar las URLs de las imágenes desde Firebase Storage
-    bucket = storage.bucket()
-    
-    for producto in productos:
-        imagen_url = producto.imagen_url
       
     # Renderizar la plantilla con los productos y sus imágenes
     return render_template('cervezas.html', productos=productos)
@@ -103,12 +79,6 @@ def productos():
     cursor.execute('SELECT nombre, precio, descripcion, imagen_url FROM productos')
     productos = cursor.fetchall()
     cursor.close()
-
-    # Generar las URLs de las imágenes desde Firebase Storage
-    bucket = storage.bucket()
-    
-    for producto in productos:
-        imagen_url = producto.imagen_url
       
     # Renderizar la plantilla con los productos y sus imágenes
     return render_template('productos.html', productos=productos)
