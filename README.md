@@ -20,7 +20,7 @@ móvil desarrollada para la asignatura de **"Programación Gráfica"**
 ### Requisitos
 - Crear un proyecto en **Google Cloud** firebase para subir las imágenes de los productos.
 - Descargar el archivo .json con las credenciales de acceso.
-- Crear la base de datos con el script database
+- Crear la base de datos con el script database.ipynb en el gestor de SQLServer
 ### Tecnologías
 
 <img src="https://flask.palletsprojects.com/en/3.0.x/_images/flask-horizontal.png" alt="Flask" width="150" >
